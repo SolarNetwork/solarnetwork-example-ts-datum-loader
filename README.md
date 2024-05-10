@@ -63,10 +63,10 @@ npm run build
 
 Running the `build` script will generate the application into the `dist/` directory.
 
-[auth-instance]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.4.0/TypeScript/datum-loader/src/main/ts/sn.ts#L19
+[auth-instance]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/src/main/ts/sn.ts#L19
 [fetch]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 [sn-api-auth]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarNet-API-authentication-scheme-V2
 [sn-datum-loader]: https://www.npmjs.com/package/solarnetwork-datum-loader
-[sn-datum-loader-dep]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.4.0/TypeScript/datum-loader/package.json#L43
-[import-sn-auth]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.4.0/TypeScript/datum-loader/src/main/ts/sn.ts#L2-L5
-[save-creds]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.4.0/TypeScript/datum-loader/src/main/ts/sn.ts#L26-L35
+[sn-datum-loader-dep]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/package.json#L43
+[import-sn-auth]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/src/main/ts/sn.ts#L2-L5
+[save-creds]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/src/main/ts/sn.ts#L26-L35
