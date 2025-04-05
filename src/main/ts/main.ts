@@ -1,7 +1,7 @@
 import "../scss/style.scss";
 import { Popover } from "bootstrap";
 import { select } from "d3-selection";
-import { Datum } from "solarnetwork-datum-loader";
+import { Datum } from "solarnetwork-api-core/domain";
 import {
 	loadData as snLoadData,
 	lookupSources as snLookupSources,
@@ -19,11 +19,11 @@ const loadDatumButton =
 	document.querySelector<HTMLButtonElement>("#load-datum-button")!;
 
 const lookupSourcesButton = document.querySelector<HTMLButtonElement>(
-	"#lookup-sources-button"
+	"#lookup-sources-button",
 )!;
 
 const lookupDateRangeButton = document.querySelector<HTMLButtonElement>(
-	"#lookup-date-range-button"
+	"#lookup-date-range-button",
 )!;
 
 // populate app version and then display it
