@@ -1,17 +1,16 @@
-import { Aggregation, DatumFilter } from "solarnetwork-api-core/lib/domain";
+import { Aggregation, Datum, DatumFilter } from "solarnetwork-api-core/domain";
 import {
 	AuthorizationV2Builder,
 	SolarQueryApi,
-} from "solarnetwork-api-core/lib/net";
+} from "solarnetwork-api-core/net";
 
 import {
-	Datum,
 	DatumLoader,
 	DatumRange,
 	DatumRangeFinder,
 	DatumSourceFinder,
 	NodeSources,
-} from "solarnetwork-datum-loader";
+} from "solarnetwork-api-core/tool";
 
 import { SnSettingsFormElements } from "./forms";
 
@@ -95,7 +94,7 @@ export async function loadData(): Promise<Datum[]> {
 	const startDate = settingsForm.startDate.valueAsDate;
 	const endDate = settingsForm.endDate.valueAsDate;
 	const aggregation = Aggregation.valueOf(
-		settingsForm.aggregation.value
+		settingsForm.aggregation.value,
 	) as Aggregation;
 
 	const nodeIds = [] as number[];

@@ -15,14 +15,14 @@ There are a few key aspects of this example worth pointing out.
 
 ## SolarNetwork API
 
-The [solarnetwork-datum-loader][sn-datum-loader] package is
-[included in the project][sn-datum-loader-dep], which provides helpful utilities in both
-TypeScript and JavaScript for querying [datum streams][datum-stream] with the SolarNetwork API.
+The [solarnetwork-api-core][sn-api-core] package is included in the project, which provides helpful
+utilities in both TypeScript and JavaScript for querying [datum streams][datum-stream] with the
+SolarNetwork API.
 
 ```json
 {
 	"dependencies": {
-		"solarnetwork-datum-loader": "^2.0.0"
+		"solarnetwork-api-core": "^3.1.2"
 	}
 }
 ```
@@ -36,7 +36,7 @@ First the demo [imports the AuthorizationV2Builder][import-sn-auth] class and
 [creates a reusable instance][auth-instance] in an `auth` variable:
 
 ```ts
-import { AuthorizationV2Builder } from "solarnetwork-api-core/lib/net";
+import { AuthorizationV2Builder } from "solarnetwork-api-core/net";
 
 const auth = new AuthorizationV2Builder();
 ```
@@ -53,7 +53,7 @@ auth.saveSigningKey(settingsForm.snTokenSecret.value);
 # Building from source
 
 To build yourself, clone or download this repository. You need to have
-Node 16+ installed. Then:
+Node 20+ installed. Then:
 
 ```sh
 # initialize dependencies
@@ -71,7 +71,6 @@ Running the `build` script will generate the application into the `dist/` direct
 [auth-instance]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/src/main/ts/sn.ts#L19
 [datum-stream]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarNet-API-global-objects#datum-stream
 [sn-api-auth]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarNet-API-authentication-scheme-V2
-[sn-datum-loader]: https://www.npmjs.com/package/solarnetwork-datum-loader
-[sn-datum-loader-dep]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/package.json#L43
+[sn-api-core]: https://www.npmjs.com/package/solarnetwork-api-core
 [import-sn-auth]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/src/main/ts/sn.ts#L2-L5
 [save-creds]: https://github.com/SolarNetwork/solarnetwork-example-ts-datum-loader/blob/1.0.0/src/main/ts/sn.ts#L26-L35
